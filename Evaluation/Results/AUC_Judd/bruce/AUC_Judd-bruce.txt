@@ -1,0 +1,3 @@
+Model	AUC_Judd
+AIM	0.752242
+SHFT	0.816953

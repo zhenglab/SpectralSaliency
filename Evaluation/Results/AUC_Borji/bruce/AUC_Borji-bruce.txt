@@ -1,0 +1,3 @@
+Model	AUC_Borji
+AIM	0.739484
+SHFT	0.805731

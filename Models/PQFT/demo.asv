@@ -1,0 +1,18 @@
+clear;clc;close all;
+
+filename = '97.jpg';
+% read the input image
+I = im2double(imread('97.jpg'));
+[rsize, csize, lsize] = size(I);
+
+% calculate the saliency map
+img = imresize(I,[64 85]); % resize the image to a proper scale
+smp = PQFT(img, img); 
+smp = imresize(smp,[rsize csize]);
+
+% show the result
+subplot(1,2,1); imshow(I); title('Input image');
+subplot(1,2,2); imshow(smp); title('Saliency map');
+
+% save the saliency map
+imwrite(smp,['smp.jpg'],'jpg');

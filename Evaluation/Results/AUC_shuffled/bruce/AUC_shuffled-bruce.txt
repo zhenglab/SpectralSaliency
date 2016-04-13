@@ -1,0 +1,3 @@
+Model	AUC_shuffled
+AIM	0.644926
+SHFT	0.669988
